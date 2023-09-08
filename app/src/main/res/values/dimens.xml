@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fontSizeInputOutput">15sp</dimen>
+    <dimen name="fontSizeOperations">25sp</dimen>
+    <dimen name="fontSizeNumbers">20sp</dimen>
+    <dimen name="widthOpButton">75dp</dimen>
+    <dimen name="heightOpButton">65dp</dimen>
+    <dimen name="widthHeightNumberButton">20dp</dimen>
+</resources>
