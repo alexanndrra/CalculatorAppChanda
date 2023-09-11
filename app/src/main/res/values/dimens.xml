@@ -3,9 +3,6 @@
     <dimen name="fontSizeInputOutput">15sp</dimen>
     <dimen name="fontSizeOperations">25sp</dimen>
     <dimen name="fontSizeNumbers">20sp</dimen>
-    <dimen name="widthOpButton">55dp</dimen>
-    <dimen name="heightOpButton">45dp</dimen>
-    <dimen name="widthHeightNumberButton">10dp</dimen>
     <dimen name="inputPadding">15dp</dimen>
     <dimen name="inputMargin">5dp</dimen>
     <dimen name="inputHeight">65dp</dimen>
