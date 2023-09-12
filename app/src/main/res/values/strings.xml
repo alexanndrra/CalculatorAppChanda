@@ -5,4 +5,5 @@
     <string name="multiply">*</string>
     <string name="divide">/</string>
     <string name="delete">Delete</string>
+    <string name="equals">=</string>
 </resources>

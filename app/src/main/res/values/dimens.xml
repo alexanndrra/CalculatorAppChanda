@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="fontSizeInputOutput">15sp</dimen>
+    <dimen name="fontSizeInputOutput">25sp</dimen>
     <dimen name="fontSizeOperations">25sp</dimen>
-    <dimen name="fontSizeNumbers">20sp</dimen>
-    <dimen name="inputPadding">15dp</dimen>
+    <dimen name="fontSizeNumbers">25sp</dimen>
+    <dimen name="fontSizeDelete">10dp</dimen>
+    <dimen name="inputPadding">5dp</dimen>
     <dimen name="inputMargin">5dp</dimen>
-    <dimen name="inputHeight">65dp</dimen>
-    <dimen name="inputWidth">145dp</dimen>
+    <dimen name="opNumPadding">5dp</dimen>
+    <dimen name="opNumMargin">5dp</dimen>
 </resources>

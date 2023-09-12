@@ -8,9 +8,19 @@
     tools:context=".MainActivity">
 
     <TableLayout
-        android:layout_width="match_parent"
+        android:layout_width="400dp"
         android:layout_height="700dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
         <TableRow
             android:layout_width="match_parent"
@@ -20,31 +30,42 @@
                 android:id="@+id/editTextInput"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
+                android:layout_margin="@dimen/inputMargin"
+                android:layout_span="2"
                 android:ems="10"
+                android:hint="First num"
                 android:inputType="text"
-                android:text="Name"
-                android:layout_span="2"/>
+                android:padding="@dimen/inputPadding"
+                android:textSize="@dimen/fontSizeInputOutput" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/editTextInput2"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
+                android:layout_gravity="center|start"
+                android:layout_margin="@dimen/inputMargin"
+                android:layout_span="2"
                 android:ems="10"
+                android:hint="Second num"
                 android:inputType="text"
-                android:text="Name"
-                android:layout_span="2"/>
+                android:padding="@dimen/inputPadding"
+                android:textSize="@dimen/fontSizeInputOutput" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textViewOutput"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:layout_margin="@dimen/inputMargin"
+                android:layout_span="2"
+                android:padding="@dimen/inputPadding"
+                android:text="Result"
+                android:textSize="@dimen/fontSizeInputOutput" />
         </TableRow>
 
         <TableRow
@@ -55,33 +76,45 @@
                 android:id="@+id/buttonPlus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_onTertiaryContainer"
+                android:padding="@dimen/opNumPadding"
                 android:text="@string/plus"
-                android:textColor="@color/md_theme_dark_outlineVariant" />
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeOperations" />
 
             <Button
                 android:id="@+id/buttonMinus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_onTertiaryContainer"
+                android:padding="@dimen/opNumPadding"
                 android:text="@string/minus"
-                android:textColor="@color/md_theme_dark_outlineVariant" />
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeOperations" />
 
             <Button
                 android:id="@+id/buttonMultiply"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_onTertiaryContainer"
+                android:padding="@dimen/opNumPadding"
                 android:text="@string/multiply"
-                android:textColor="@color/md_theme_dark_outlineVariant" />
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeOperations" />
 
             <Button
                 android:id="@+id/buttonDivide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_onTertiaryContainer"
+                android:padding="@dimen/opNumPadding"
                 android:text="@string/divide"
-                android:textColor="@color/md_theme_dark_outlineVariant" />
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeOperations" />
         </TableRow>
 
         <TableRow
@@ -92,33 +125,45 @@
                 android:id="@+id/buttonOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+                android:padding="@dimen/opNumPadding"
                 android:text="1"
-                android:textColor="@color/md_theme_dark_outlineVariant" />
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeNumbers" />
 
             <Button
                 android:id="@+id/buttonTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+                android:padding="@dimen/opNumPadding"
                 android:text="2"
-                android:textColor="@color/md_theme_dark_outlineVariant" />
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeNumbers" />
 
             <Button
                 android:id="@+id/buttonThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
-                android:text="4"
-                android:textColor="@color/md_theme_dark_outlineVariant" />
+                android:padding="@dimen/opNumPadding"
+                android:text="3"
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeNumbers" />
 
             <Button
                 android:id="@+id/buttonFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
-                android:text="5"
-                android:textColor="@color/md_theme_dark_outlineVariant" />
+                android:padding="@dimen/opNumPadding"
+                android:text="4"
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeNumbers" />
         </TableRow>
 
         <TableRow
@@ -129,33 +174,45 @@
                 android:id="@+id/buttonFive"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
-                android:text="6"
-                android:textColor="@color/md_theme_dark_outlineVariant" />
+                android:padding="@dimen/opNumPadding"
+                android:text="5"
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeNumbers" />
 
             <Button
                 android:id="@+id/buttonSix"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
-                android:text="7"
-                android:textColor="@color/md_theme_dark_outlineVariant" />
+                android:padding="@dimen/opNumPadding"
+                android:text="6"
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeNumbers" />
 
             <Button
                 android:id="@+id/buttonSeven"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
-                android:text="8"
-                android:textColor="@color/md_theme_dark_outlineVariant" />
+                android:padding="@dimen/opNumPadding"
+                android:text="7"
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeNumbers" />
 
             <Button
                 android:id="@+id/buttonEight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
-                android:text="9"
-                android:textColor="@color/md_theme_dark_outlineVariant" />
+                android:padding="@dimen/opNumPadding"
+                android:text="8"
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeNumbers" />
         </TableRow>
 
         <TableRow
@@ -166,16 +223,43 @@
                 android:id="@+id/buttonNine"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
-                android:text="0"
-                android:textColor="@color/md_theme_dark_outlineVariant" />
+                android:padding="@dimen/opNumPadding"
+                android:text="9"
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeNumbers" />
 
             <Button
                 android:id="@+id/buttonZero"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
+                android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+                android:padding="@dimen/opNumPadding"
+                android:text="0"
+                android:textColor="@color/md_theme_dark_outlineVariant"
+                android:textSize="@dimen/fontSizeNumbers" />
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
                 android:backgroundTint="@color/md_theme_dark_outlineVariant"
-                android:text="@string/delete" />
+                android:padding="@dimen/opNumPadding"
+                android:text="@string/delete"
+                android:textSize="@dimen/fontSizeNumbers" />
+
+            <Button
+                android:id="@+id/buttonEquals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
+                android:backgroundTint="@color/md_theme_dark_onTertiary"
+                android:padding="@dimen/opNumPadding"
+                android:text="@string/equals"
+                android:textSize="@dimen/fontSizeNumbers" />
         </TableRow>
 
         <TableRow
