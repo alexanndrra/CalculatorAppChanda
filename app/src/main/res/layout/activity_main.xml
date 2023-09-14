@@ -7,6 +7,9 @@
     android:background="@color/seed"
     tools:context=".MainActivity">
 
+    <!--Table Layout made it possible to group all buttons and textViews
+     and to make them the same size-->
+    <!--Link to resource: https://www.tutorialspoint.com/android/android_table_layout.htm -->
     <TableLayout
         android:layout_width="400dp"
         android:layout_height="700dp"
