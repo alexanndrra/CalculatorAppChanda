@@ -270,7 +270,20 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/opNumMargin"
+                android:layout_span="4"
+                android:backgroundTint="@color/md_theme_light_onErrorContainer"
+                android:padding="@dimen/opNumPadding"
+                android:text="@string/clear"
+                android:textSize="@dimen/fontSizeNumbers"
+                android:onClick="onClick"/>
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"

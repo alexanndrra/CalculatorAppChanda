@@ -330,7 +330,16 @@ public class MainActivity extends AppCompatActivity {
             textViewOut.setText(strRes);
         }
 
-        //add a clear everything button?
+        //clear everything button
+        if(v.getId() == R.id.buttonClear){
+            strInput1 = "enter num";
+            textViewFirst.setText(strInput1);
+            strInput2 = "enter num";
+            textViewSecond.setText(strInput2);
+            operation = "none";
+            onInpOne = true;
+            textViewOut.setText("Result");
+        }
     }
 
 
